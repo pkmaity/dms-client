@@ -4,7 +4,8 @@ import {
   MatDialogModule,
   MatFormFieldModule,
   MatInputModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTabsModule
 
 } from '@angular/material'
 
@@ -13,7 +14,8 @@ const ListOfModule = [
   MatDialogModule,
   MatFormFieldModule,
   MatInputModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTabsModule
 ];
 
 @NgModule({

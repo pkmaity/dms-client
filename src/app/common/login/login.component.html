@@ -1,25 +1,45 @@
 <div class="md-dialog-container">
-  
-  <div class="section-1"></div>
+    <mat-tab-group>
+      <mat-tab label="Login"> 
+        <div class="self">
+          <mat-form-field>
+            <input matInput placeholder="User Id">
+          </mat-form-field> 
+        </div>
+        <div class="self">
+          <mat-form-field>
+            <input matInput placeholder="Password">
+          </mat-form-field>
+        </div> 
+        <button mat-raised-button color="primary">Submit</button>
+      </mat-tab>
+      <mat-tab label="Sign Up"> 
+        <div class="self">
+          <mat-form-field>
+            <input matInput placeholder="Name">
+          </mat-form-field>
+        
+          <mat-form-field>
+            <input matInput placeholder="Email">
+          </mat-form-field>
+        
+          <mat-form-field>
+            <input matInput placeholder="Phone No">
+          </mat-form-field>
 
-  <div class="section-2">
-    <mat-form-field>
-      <input matInput placeholder="Name">
-    </mat-form-field>
-  
-    <mat-form-field>
-        <input matInput placeholder="Email">
-    </mat-form-field>
-  
-    <mat-form-field>
-        <input matInput placeholder="Phone No">
-    </mat-form-field>
-
-    <button mat-raised-button color="primary">Proceed</button>
-
-  </div>
+          <mat-form-field>
+              <input matInput placeholder="Password">
+            </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary">Submit</button>
     
-  <button mat-raised-button color="primary"></button>
-  <button mat-raised-button color="primary">Proceed</button>
-  
+        <div class="sign-up-with-others">
+    
+          <p>or sign up with</p><br>
+    
+          <button mat-raised-button color="warn">Google</button>
+          <button mat-raised-button color="accent">Face Book</button>
+        </div>  
+    </mat-tab>
+  </mat-tab-group>
 </div>

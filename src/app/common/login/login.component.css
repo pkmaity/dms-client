@@ -2,15 +2,22 @@
     width: 450px;
     height: 350px;
     display: grid;
-    grid-template-columns: 45% 55%;
-    grid-template-areas: 'section1 section2';
+    grid-template-columns: auto;
+    padding-right: 20px;
+}
+
+.self{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+.sign-up-with-others{
+    display: grid;
     grid-gap: 10px;
+    grid-template-columns: 48% 48%;
+    padding-top: 5%;
 }
 
-.section1{
-    grid-area: section1;
-}
-
-.section2{
-    grid-area: section2;
+.sign-up-with-others > p{
+    font-family: Roboto,Arial,sans-serif;
 }

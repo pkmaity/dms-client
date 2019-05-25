@@ -92,7 +92,7 @@ a, a:hover {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 64px 40px minmax(500px, auto) 50px;
+        grid-template-rows: 64px 55px minmax(500px, auto) 50px;
         grid-template-areas:
           'header'
           'navbar'
