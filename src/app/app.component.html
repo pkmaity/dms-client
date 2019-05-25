@@ -6,24 +6,23 @@
       </a>
     </div>
     <div class="header-items">
-      <a href="login">Login & Signup</a>
-      <a href="cart">Cart</a>
+      <a [routerLink]="['/login']">Login & Signup</a>
+      <a [routerLink]="['/chart']">Cart</a>
     </div>
   </div>
   <div class="navbar">
       <div class="navbar-items">
-        <a href="login">Sari</a>
-        <a href="login">Churidar</a>
-        <a href="cart">Salwar & Kameez</a>
-        <a href="cart">Jeans</a>
+        <a [routerLink]="['/']">Home</a>
+        <a [routerLink]="['login']">Churidar</a>
+        <a [routerLink]="['cart']">Salwar & Kameez</a>
+        <a [routerLink]="['cart']">Jeans</a>
+        <a [routerLink]="['login']">Shorts</a>
+        <a [routerLink]="['cart']">Skirts</a>
+        <a [routerLink]="['cart']">Trousars</a>
       </div>
   </div>
   <div class="container">
-    
-    
-    
     <router-outlet></router-outlet>
-  
   </div>  
   <div class="sidebar">Left Side Bar</div>
   <div class="footer">Footer</div>

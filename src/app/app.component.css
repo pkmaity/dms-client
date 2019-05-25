@@ -51,7 +51,7 @@ a, a:hover {
     .navbar-items{
         grid-area: navbar-items;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         grid-column-gap: 50px;
         justify-items: center;
         align-items: center;

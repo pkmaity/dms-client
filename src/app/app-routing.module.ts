@@ -5,7 +5,7 @@ import { P404Component } from './common/p404/p404.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: '/',
     pathMatch: 'full',
   },
   {
@@ -15,7 +15,7 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'dashboard',
+        path: '',
         loadChildren: './modules/home/home.module#HomeModule'
       }
     ]
