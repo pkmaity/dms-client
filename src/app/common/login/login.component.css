@@ -1,0 +1,16 @@
+.md-dialog-container {
+    width: 450px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 'section1 section2';
+    grid-gap: 10px;
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
