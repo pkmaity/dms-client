@@ -1,7 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { P404Component } from './common/p404/p404.component';
 
-const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
+    data: {
+      title: 'Home'
+    },
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: './modules/home/home.module#HomeModule'
+      }
+    ]
+  },
+  { path: '**', component: P404Component }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

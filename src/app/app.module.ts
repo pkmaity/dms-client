@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { P404Component } from './common/p404/p404.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    P404Component
   ],
   imports: [
     BrowserModule,
