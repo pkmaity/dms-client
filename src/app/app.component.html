@@ -11,15 +11,93 @@
     </div>
   </div>
   <div class="navbar">
-      <div class="navbar-items">
-        <a [routerLink]="['']">Home</a>
-        <a [routerLink]="['login']">Churidar</a>
-        <a [routerLink]="['cart']">Salwar & Kameez</a>
-        <a [routerLink]="['cart']">Jeans</a>
-        <a [routerLink]="['login']">Shorts</a>
-        <a [routerLink]="['cart']">Skirts</a>
-        <a [routerLink]="['cart']">Trousars</a>
+    <div class="navbar-items">
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a [routerLink]="['']">Home</a> 
+          <i class="fa fa-angle-down"></i>
+        </div>
       </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Shirts</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Churidar</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Salwar & Kameez</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Shorts</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Skirts</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="dropbtn">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <a href="javascript: void(0);">Trousars</a> 
+          <i class="fa fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#">Items</a>
+            <a href="#">Projects</a>
+            <a href="#">Rate Chart</a>
+            <a href="#">Vendors</a>
+          </div>  
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container">
     <router-outlet></router-outlet>
