@@ -9,6 +9,7 @@ import { RegisterComponent } from './common/register/register.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaretialModule } from './modules/maretial/maretial.module';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { NavbarComponent } from './common/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     P404Component,
     LoginComponent,
     RegisterComponent,
+    NavbarComponent
   ],
   entryComponents:[
     LoginComponent
