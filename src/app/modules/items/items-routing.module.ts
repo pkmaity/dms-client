@@ -3,8 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { ItemsComponent } from './items/items.component'
 const routes: Routes = [
   {
-    path: ":item",
-    component: ItemsComponent
+    path: ":item/:id",
+    component: ItemsComponent,
+    data : {some_data : 'some value'}
   }
 ];
 
