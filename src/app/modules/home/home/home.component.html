@@ -1,5 +1,14 @@
 <div class="wrap-elements">
-  <div class="item1">1</div>
+  <div class="item1">
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide *ngFor="let image of images">
+        <img [src]="image" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3></h3>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
   <div class="item2">2</div>
   <div class="item3">3</div>
   <div class="item4">4</div>

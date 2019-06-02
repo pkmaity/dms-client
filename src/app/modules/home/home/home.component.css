@@ -41,3 +41,8 @@
     grid-column: 4;
     grid-row: 3 / span 2;
 }
+
+img{
+    height: 200px;
+    width: 100%;
+}
