@@ -23,4 +23,4 @@ const ListOfModule = [
   imports: [ListOfModule],
   exports: [ListOfModule]
 })
-export class MaretialModule { }
+export class MatModule { }

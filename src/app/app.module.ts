@@ -7,9 +7,10 @@ import { P404Component } from './common/p404/p404.component';
 import { LoginComponent } from './common/login/login.component';
 import { RegisterComponent } from './common/register/register.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MaretialModule } from './modules/maretial/maretial.module';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatModule } from './common/mat/mat.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { NavbarComponent } from './common/navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,9 @@ import { NavbarComponent } from './common/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaretialModule,
-    MatFormFieldModule
+    MatModule,
+    MatFormFieldModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

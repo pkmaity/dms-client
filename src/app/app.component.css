@@ -34,8 +34,8 @@ a, a:hover {
 
     /***********************************NAV BAR************************************/
 
-    .navbar { 
-        grid-area: navbar;
+    .navbar-element { 
+        grid-area: navbar-element;
         display: grid;
         grid-template-columns: auto;
         justify-items: center;        
@@ -47,10 +47,10 @@ a, a:hover {
         box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
     }
 
-    /*************************************Container**********************************/
+    /*************************************content-elements**********************************/
 
-    .container { 
-        grid-area: container; 
+    .content-elements { 
+        grid-area: content-elements; 
         background-color: #f0f2f5;
         margin-top: 4px;
     }
@@ -75,14 +75,14 @@ a, a:hover {
         align-items: center;
     }
 
-    .grid-container {
+    .grid-content-elements {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 58px 40px minmax(500px, auto) 50px;
         grid-template-areas:
           'header'
-          'navbar'
-          'container'
+          'navbar-element'
+          'content-elements'
           'footer';
       }
       
@@ -90,30 +90,30 @@ a, a:hover {
 
 @media only screen and (max-width: 600px) {
     .header { grid-area: header; }
-    .navbar { 
-        grid-area: navbar;
+    .navbar-element { 
+        grid-area: navbar-element;
         display: none;
      }
-    .container { grid-area: container; }
+    .content-elements { grid-area: content-elements; }
     .sidebar { 
         grid-area: sidebar;
      }
     .footer { grid-area: footer; }
 
-    .grid-container {
+    .grid-content-elements {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 500px 50px;
         grid-template-areas:
           'header header header header'
-          'sidebar container container container'
+          'sidebar content-elements content-elements content-elements'
           'sidebar footer footer footer';
         grid-gap: 10px;
         background-color: #2196F3;
         padding: 10px;
       }
       
-      .grid-container > div {
+      .grid-content-elements > div {
         background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         padding: 20px 0;
