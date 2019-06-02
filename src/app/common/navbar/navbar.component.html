@@ -1,24 +1,26 @@
 <div class="navbar-elements">
   <div class="nav-element">
     <div class="dropbtn">
-      <i class="fa fa-handshake-o" aria-hidden="true"></i>
-        <a [routerLink]="['']">Home</a> 
-      <i class="fa fa-angle-down"></i>
+      <a [routerLink]="['']">Home</a> 
     </div>
   </div>
   <div class="nav-element">
     <div class="dropdown">
-      <button class="dropbtn">Sari</button>
+      <button class="dropbtn">Saree
+        <i class="fa fa-angle-down"></i>
+      </button>
       <div class="dropdown-content">    
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a [routerLink]="['items/saree/kan']">Kanjeevaram Silk</a>
+      <a [routerLink]="['']">Kalamkari</a>
+      <a [routerLink]="['']">Sambalpuri</a>
       </div>
     </div>
   </div>
   <div class="nav-element">
     <div class="dropdown">
-      <button class="dropbtn">Salwar Kameez</button>
+      <button class="dropbtn">Salwar Kameez
+        <i class="fa fa-angle-down"></i>
+      </button>
       <div class="dropdown-content">    
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
@@ -28,7 +30,9 @@
   </div>
   <div class="nav-element">
     <div class="dropdown">
-      <button class="dropbtn">Trowser</button>
+      <button class="dropbtn">Trowser
+        <i class="fa fa-angle-down"></i>
+      </button>
       <div class="dropdown-content">    
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>

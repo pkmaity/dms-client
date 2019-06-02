@@ -86,38 +86,81 @@ a, a:hover {
           'content-elements'
           'footer';
       }
-      
 }
 
 @media only screen and (max-width: 600px) {
-    .header { grid-area: header; }
+    /****************************HEADER*******************************************/
+    .header { 
+        grid-area: header; 
+        background-color: #3c69c3;
+        display: grid;
+        grid-template-columns: 10px 1fr 5fr 10px 2fr;
+        grid-template-areas: '. logo . . header-items';
+        justify-items: center;        
+        align-items: center;
+    }
+
+    .logo{
+        grid-area: logo;
+    }
+
+    .header-items{
+        grid-area: header-items;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+    .header-items > a{
+      color: #f1f3f6;
+      font-family: Roboto,Arial,sans-serif;
+      font-weight: bolder;
+    }
+
+    /***********************************NAV BAR************************************/
+
     .navbar-element { 
         grid-area: navbar-element;
         display: none;
-     }
-    .content-elements { grid-area: content-elements; }
+    }
+
+    /*************************************content-elements**********************************/
+
+    .content-elements { 
+        grid-area: content-elements; 
+        background-color: #f0f2f5;
+        margin-top: 4px;
+    }
+
+    /*************************************Side Bar**********************************/
     .sidebar { 
         grid-area: sidebar;
+        display: none;
      }
-    .footer { grid-area: footer; }
+
+    /***************************************Footer********************************/
+
+    .footer { 
+        grid-area: footer; 
+        display: grid;
+        background-color: #162337;
+        color: #77787b;
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 100px;
+        min-height: 265px;
+        justify-items: center;
+        align-items: center;
+    }
 
     .grid-content-elements {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 500px 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 58px 40px minmax(500px, auto) 50px;
         grid-template-areas:
-          'header header header header'
-          'sidebar content-elements content-elements content-elements'
-          'sidebar footer footer footer';
-        grid-gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-      }
-      
-      .grid-content-elements > div {
-        background-color: rgba(255, 255, 255, 0.8);
-        text-align: center;
-        padding: 20px 0;
+          'header'
+          'navbar-element'
+          'content-elements'
+          'footer';
       }
 
 }
