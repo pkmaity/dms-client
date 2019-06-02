@@ -19,7 +19,7 @@ export const routes: Routes = [
         loadChildren: './modules/home/home.module#HomeModule'
       },
       {
-        path: 'items',
+        path: 'products',
         loadChildren: './modules/items/items.module#ItemsModule'
       }
     ]
