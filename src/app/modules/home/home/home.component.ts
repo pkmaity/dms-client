@@ -9,7 +9,8 @@ export class HomeComponent implements OnInit {
 
   showNavigationArrows = false;
   showNavigationIndicators = false;
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  carouselimages = [1, 2, 3].map(() => `https://picsum.photos/900/300?random&t=${Math.random()}`);
+  otherimages = [2,3,4,5,6,7,8,9,10,11,12].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree

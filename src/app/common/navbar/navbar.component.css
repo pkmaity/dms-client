@@ -46,7 +46,7 @@ button{
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     top: 0;
-    border-top: 3px solid rgb(15, 212, 187, 1);
+    border-top: 3px solid rgb(222, 20, 20, 1);
 }
 
 .dropdown-content a {
@@ -58,8 +58,9 @@ button{
 }
   
 .dropdown-content a:hover {
-    background-color: #4c32b3;
+    background-color: #e409a1;
     color: white;
+    font-weight: bolder;
 }
 
 .dropdown:hover .dropdown-content {
