@@ -7,11 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  @Input('item') public image;
-
   constructor() { }
 
   ngOnInit() {
   }
-
+  img = [0].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  images = [0,1,2,3].map(() => `https://picsum.photos/100/100?random&t=${Math.random()}`);
 }

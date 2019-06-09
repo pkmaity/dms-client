@@ -1,9 +1,25 @@
-<div class="card">
-    <img [src]="image" alt="Random first slide">
-    <div class="card-body">
-        <h5 class="card-title">Saree Name</h5>
-        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i> 2500</p>
-        <button mat-raised-button color="primary">Buy</button>
+<div class="wrap-elements">
+    <div class="row">
+        <div class="col-md-5 md-co-xs-5">
+            <div class="row">
+                <div class="col-md-2 col-xs-2">
+                    <ng-container *ngFor="let image of images">
+                        <ng-container *ngTemplateOutlet="itemList; context: {image:image}"></ng-container>
+                    </ng-container>
+                </div>
+                <div class="col-md-10 col-xs-10 border center bg-img">
+                    <img [src]="img" alt="Random first slide">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-xs-7"></div>
     </div>
 </div>
 
+<ng-template #itemList let-img="image">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 sm-imgs border">
+            <img [src]="img" alt="Random first slide">
+        </div>
+    </div>
+</ng-template>

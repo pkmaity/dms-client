@@ -9,7 +9,7 @@
     background-color: #adc5d873;
     text-align: center;
     font-size: 30px;
-    min-height: 200px;
+    min-height: 260px;
     height: auto;
   }
 
@@ -43,17 +43,22 @@
 }
 
 img{
-    height: 200px;
+    height: 260px;
+    width: 100%;
+}
+
+.item1 > img {
+    height: 260px;
     width: 100%;
 }
 
 .item5 > img {
-    height: 400px;
+    height: 420px;
     width: 100%;
 }
 
 .item6 > img {
-    height: 400px;
+    height: 420px;
     width: 100%;
 }
 

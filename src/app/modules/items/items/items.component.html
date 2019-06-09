@@ -1,8 +1,20 @@
 <div class="wrap-elements">
-  <ng-container *ngIf="items">
-    <ng-container *ngFor="let item of items">
-        <!-- <img [src]="item" alt="Random first slide"> -->
-        <app-item [item]="item"></app-item>
+  <ng-container *ngIf="images">
+    <ng-container *ngFor="let image of images">
+        <ng-container *ngTemplateOutlet="itemList; context: {image:image}"></ng-container>
     </ng-container>
   </ng-container>
 </div>
+
+<ng-template #itemList let-img="image">
+  <div class="card">
+    <a [routerLink]="[item_code]">
+        <img [src]="img" alt="Random first slide">
+    </a>
+    <div class="card-body">
+        <h5 class="card-title">Saree Name</h5>
+        <p class="card-text"><i class="fa fa-inr" aria-hidden="true"></i> 2500</p>
+        <button mat-raised-button color="primary">Buy</button>
+    </div>
+  </div>
+</ng-template>

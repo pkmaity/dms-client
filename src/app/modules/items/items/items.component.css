@@ -5,10 +5,7 @@
     padding: 8px;
 }
 
-.wrap-elements > div {
-    background-color: #adc5d873;
-    text-align: center;
-    font-size: 30px;
-    min-height: 200px;
-    height: auto;
-  }
+img{
+  height: 200px;
+  width: 100%;
+}
