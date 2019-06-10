@@ -2,14 +2,24 @@
 a, a:hover {
     text-decoration: none;
 }
-.navbar-elements{
+
+@media only screen and (min-width: 1200px) {
+    
+    .navbar-elements{
+        display: grid;
+        grid-template-columns: repeat(6, 4fr);
+        grid-column-gap: 50px;
+    }
+}
+/* .navbar-elements{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 4fr);
     grid-column-gap: 50px;
 }
-
+ */
 .nav-element{
-    position: relative;
+    height: 40px;
+    width: 100%;
 }
 
 .dropbtn {
@@ -69,4 +79,28 @@ button{
 
 .dropdown:hover .dropbtn {
     background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    *{
+        font-size: 13px;
+    }
+    .navbar-elements{
+        display: grid;
+        grid-template-columns: repeat(6, 4fr);
+        grid-column-gap: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    *{
+        font-size: 2px;
+    }
+    .navbar-elements{
+        display: grid;
+        grid-template-columns: repeat(6, 4fr);
+        grid-column-gap: 5px;
+        text-align: center;
+    }
 }
